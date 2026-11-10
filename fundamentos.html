@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conceptos básicos de inteligencia artificial, aprendizaje automático y modelos de lenguaje.">
+  <meta name="author" content="Alfredo Peters">
+  <title>Fundamentos | IA y desarrollo de software</title>
+  <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+  <script src="js/tema.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/principal.js" defer></script>
+</head>
+<body id="arriba">
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado y navegación compartidos por todas las páginas. -->
+  <header class="cabecera-sitio">
+    <div class="contenedor encabezado">
+      <a class="marca" href="index.html" aria-label="IA y desarrollo de software, ir al inicio">
+        <img src="imagenes/marca-ia.svg" width="46" height="46" alt="">
+        <span>
+          <span class="nombre-sitio">IA y desarrollo de software</span>
+          <span class="asignatura">Desarrollo de Software V</span>
+        </span>
+      </a>
+      <button id="boton-tema" class="boton-tema" type="button" hidden>
+        <span id="icono-tema" class="icono-tema" aria-hidden="true">☾</span>
+        <span id="texto-tema" class="texto-tema">Modo oscuro</span>
+      </button>
+      <button id="boton-menu" class="boton-menu" type="button"
+              aria-controls="enlaces-menu" aria-expanded="false" hidden>Menú</button>
+    </div>
+    <nav aria-label="Navegación principal">
+      <div class="contenedor">
+        <div id="enlaces-menu" class="enlaces-menu">
+          <a href="index.html">Inicio</a>
+          <a href="fundamentos.html" aria-current="page">Fundamentos</a>
+          <a href="aplicaciones.html">Aplicaciones</a>
+          <a href="beneficios-riesgos.html">Beneficios y riesgos</a>
+          <a href="buenas-practicas.html">Buenas prácticas</a>
+          <a href="autor.html">Autor</a>
+        </div>
+      </div>
+    </nav>
+    <div class="progreso-lectura" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="contenido" class="contenedor" tabindex="-1">
+<div class="titulo-pagina cabecera-ilustrada">
+  <div>
+    <p class="etiqueta">Fundamentos</p>
+    <h1>¿Qué es la inteligencia artificial?</h1>
+    <p>Comprender los conceptos ayuda a utilizar estas herramientas con un objetivo claro.</p>
+  </div>
+  <figure class="mapa-conceptos arte-cabecera">
+    <div class="nivel-concepto">
+      <strong>Inteligencia artificial</strong>
+      <span>El campo que reúne distintos enfoques.</span>
+      <div class="nivel-concepto">
+        <strong>Aprendizaje automático</strong>
+        <span>Modelos que aprenden patrones de los datos.</span>
+        <div class="nivel-concepto">
+          <strong>IA generativa</strong>
+          <span>Una aplicación que produce contenido nuevo.</span>
+        </div>
+      </div>
+    </div>
+    <figcaption>El esquema muestra cómo se relacionan en herramientas generativas que aprenden de datos.</figcaption>
+  </figure>
+</div>
+
+<section class="seccion">
+  <h2>Una introducción a la IA</h2>
+  <p>La inteligencia artificial es un campo de la informática que estudia cómo construir sistemas capaces de realizar tareas como reconocer patrones, hacer predicciones, planificar o generar contenido.</p>
+  <p>En el desarrollo de software, algunas herramientas utilizan IA para sugerir instrucciones, explicar fragmentos de código o ayudar a encontrar posibles errores.</p>
+  <p>Para evaluar una propuesta, la persona que programa necesita conocer el problema y comprobar que la solución cumple los requisitos.</p>
+</section>
+
+<section class="seccion">
+  <h2>Conceptos principales</h2>
+  <dl class="conceptos">
+    <dt>Aprendizaje automático (Machine Learning)</dt>
+    <dd>Es una parte de la IA que utiliza datos para ajustar modelos. Estos modelos pueden reconocer relaciones y producir predicciones sobre nuevas entradas.</dd>
+    <dt>Aprendizaje profundo (Deep Learning)</dt>
+    <dd>Es un enfoque del aprendizaje automático que emplea redes neuronales con varias capas para representar patrones complejos.</dd>
+    <dt>IA generativa</dt>
+    <dd>Se refiere a sistemas que generan contenido, como texto, imágenes o código, a partir de una entrada.</dd>
+    <dt>Modelos de lenguaje</dt>
+    <dd>Son modelos entrenados con texto que pueden generar secuencias de lenguaje. Algunos también pueden trabajar con lenguajes de programación.</dd>
+  </dl>
+</section>
+
+<section class="seccion">
+  <h2>¿Cómo se obtiene una respuesta?</h2>
+  <ol class="lista-pasos">
+    <li><strong>Se plantea una solicitud.</strong> La persona describe la tarea y aporta el contexto necesario.</li>
+    <li><strong>El modelo procesa la entrada.</strong> Utiliza patrones aprendidos durante su entrenamiento para generar una propuesta.</li>
+    <li><strong>Se revisa la respuesta.</strong> La persona comprueba si lo propuesto responde al problema y si funciona en su proyecto.</li>
+  </ol>
+  <div class="nota">
+    <p><strong>Entrenamiento e inferencia:</strong> el entrenamiento ajusta un modelo a partir de datos; la inferencia utiliza el modelo entrenado para responder a una entrada.</p>
+  </div>
+</section>
+
+<section class="seccion">
+  <h2>La importancia de dar contexto</h2>
+  <p>Una solicitud a una herramienta de IA suele llamarse <em>prompt</em>. Conviene indicar el objetivo, el lenguaje de programación, las restricciones y el resultado esperado.</p>
+  <p>Por ejemplo: «En JavaScript, crea una función que indique si el título de una tarea contiene texto. Debe rechazar entradas vacías y valores que no sean cadenas. Explica tres casos de prueba».</p>
+  <p>Una petición concreta facilita revisar el resultado. Aun así, la respuesta puede contener errores y debe comprobarse.</p>
+</section>
+
+<section class="fuentes">
+  <h2>Fuente consultada</h2>
+  <p><a href="https://developers.google.com/machine-learning/crash-course">Google for Developers: curso de aprendizaje automático</a>.</p>
+</section>
+<nav class="navegacion-paginas" aria-label="Recorrido por el sitio">
+  <a href="index.html">
+    <img src="imagenes/marca-ia.svg" width="40" height="40" alt="">
+    <span>
+      <span class="direccion-pagina">Anterior</span>
+      <strong class="titulo-destino">Inicio</strong>
+      <span class="descripcion-destino">Explora el recorrido completo.</span>
+    </span>
+    <span class="flecha-destino" aria-hidden="true">←</span>
+  </a>
+  <a href="aplicaciones.html">
+    <img src="imagenes/icono-aplicaciones.svg" width="40" height="40" alt="">
+    <span>
+      <span class="direccion-pagina">Siguiente</span>
+      <strong class="titulo-destino">Aplicaciones</strong>
+      <span class="descripcion-destino">Descubre cómo se usa la IA al programar.</span>
+    </span>
+    <span class="flecha-destino" aria-hidden="true">→</span>
+  </a>
+</nav>
+  </main>
+
+  <footer>
+    <div class="contenedor footer-principal">
+      <div>
+        <p class="titulo-footer">Una idea es un buen comienzo.</p>
+        <p class="descripcion-footer">Comprende la IA, explora sus aplicaciones y construye con criterio.</p>
+      </div>
+      <div class="footer-enlaces">
+        <a href="fundamentos.html">Explorar los fundamentos</a>
+        <a href="autor.html">Conocer al autor</a>
+      </div>
+    </div>
+    <div class="contenedor pie-pagina">
+      <p>Alfredo Peters · Desarrollo de Software V</p>
+      <a href="#arriba">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>

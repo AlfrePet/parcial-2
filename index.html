@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio educativo sobre inteligencia artificial aplicada al desarrollo de software, creado por Alfredo Peters.">
+  <meta name="author" content="Alfredo Peters">
+  <title>Inicio | IA y desarrollo de software</title>
+  <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+  <script src="js/tema.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/principal.js" defer></script>
+</head>
+<body id="arriba">
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado y navegación compartidos por todas las páginas. -->
+  <header class="cabecera-sitio">
+    <div class="contenedor encabezado">
+      <a class="marca" href="index.html" aria-label="IA y desarrollo de software, ir al inicio">
+        <img src="imagenes/marca-ia.svg" width="46" height="46" alt="">
+        <span>
+          <span class="nombre-sitio">IA y desarrollo de software</span>
+          <span class="asignatura">Desarrollo de Software V</span>
+        </span>
+      </a>
+      <button id="boton-tema" class="boton-tema" type="button" hidden>
+        <span id="icono-tema" class="icono-tema" aria-hidden="true">☾</span>
+        <span id="texto-tema" class="texto-tema">Modo oscuro</span>
+      </button>
+      <button id="boton-menu" class="boton-menu" type="button"
+              aria-controls="enlaces-menu" aria-expanded="false" hidden>Menú</button>
+    </div>
+    <nav aria-label="Navegación principal">
+      <div class="contenedor">
+        <div id="enlaces-menu" class="enlaces-menu">
+          <a href="index.html" aria-current="page">Inicio</a>
+          <a href="fundamentos.html">Fundamentos</a>
+          <a href="aplicaciones.html">Aplicaciones</a>
+          <a href="beneficios-riesgos.html">Beneficios y riesgos</a>
+          <a href="buenas-practicas.html">Buenas prácticas</a>
+          <a href="autor.html">Autor</a>
+        </div>
+      </div>
+    </nav>
+    <div class="progreso-lectura" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="contenido" class="contenedor inicio" tabindex="-1">
+<section class="presentacion" aria-labelledby="titulo-portada">
+  <div class="texto-presentacion">
+    <p class="etiqueta"><span class="punto-verde" aria-hidden="true"></span> Inteligencia artificial y software</p>
+    <h1 id="titulo-portada">Del concepto<br>al código, <span>con IA.</span></h1>
+    <p class="descripcion-portada">Comprende cómo la inteligencia artificial puede acompañarte al crear software. Explora sus posibilidades y aprende a revisar cada propuesta con criterio.</p>
+    <div class="acciones-portada">
+      <a class="boton" href="fundamentos.html">Comenzar a aprender <span aria-hidden="true">↗</span></a>
+      <a class="boton boton-secundario" href="aplicaciones.html">Explorar aplicaciones <span aria-hidden="true">→</span></a>
+    </div>
+    <p class="atajo-practica"><a href="aplicaciones.html#mini-practica">Probar el validador de títulos <span aria-hidden="true">→</span></a></p>
+    <p class="detalle-portada">Conceptos claros <span aria-hidden="true">·</span> Ejemplos prácticos <span aria-hidden="true">·</span> Uso responsable</p>
+  </div>
+  <figure class="ilustracion-portada">
+    <img src="imagenes/portada-ia.svg" width="660" height="500"
+         alt="Ilustración de un editor de código entre una idea bien definida y su revisión: comprender, proponer y comprobar.">
+    <figcaption>Una idea clara. Una propuesta. Tu revisión.</figcaption>
+  </figure>
+</section>
+
+<section class="seccion introduccion-inicio">
+  <div>
+    <p class="etiqueta">El punto de partida</p>
+    <h2>Conocer la herramienta.<br>Conservar el criterio.</h2>
+  </div>
+  <div>
+    <p>Desarrollar software requiere comprender un problema, proponer una solución y comprobar que funciona. La IA puede aportar sugerencias durante ese proceso.</p>
+    <p>Conocer sus posibilidades y limitaciones te ayuda a decidir cuándo utilizarla, qué información compartir y cómo evaluar el resultado.</p>
+  </div>
+</section>
+
+<section class="seccion seccion-recorrido" aria-labelledby="titulo-recorrido">
+  <div class="cabecera-seccion">
+    <div>
+      <p class="etiqueta">Explora el contenido</p>
+      <h2 id="titulo-recorrido">Tu recorrido comienza aquí.</h2>
+    </div>
+    <p>Empieza por los conceptos y avanza hacia una forma consciente de trabajar con IA.</p>
+  </div>
+  <div class="tarjetas-inicio">
+    <article class="tarjeta tarjeta-recorrido">
+      <div class="cabecera-tarjeta"><span class="icono-tarjeta"><img src="imagenes/icono-fundamentos.svg" width="28" height="28" alt=""></span><span class="numero-tarjeta">01 / COMPRENDE</span></div>
+      <h3>Las ideas esenciales.</h3>
+      <p>Inteligencia artificial, aprendizaje automático y modelos de lenguaje. Un punto de partida para comprender cómo se conectan.</p>
+      <a href="fundamentos.html">Leer los fundamentos <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="tarjeta tarjeta-recorrido">
+      <div class="cabecera-tarjeta"><span class="icono-tarjeta"><img src="imagenes/icono-aplicaciones.svg" width="28" height="28" alt=""></span><span class="numero-tarjeta">02 / DESCUBRE</span></div>
+      <h3>De la teoría al proyecto.</h3>
+      <p>Descubre cómo la IA puede apoyar la programación, las pruebas, la documentación y la mejora del código.</p>
+      <div class="enlaces-tarjeta">
+        <a href="aplicaciones.html">Ver las aplicaciones <span aria-hidden="true">↗</span></a>
+        <a href="aplicaciones.html#mini-practica">Hacer la mini práctica <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="tarjeta tarjeta-recorrido">
+      <div class="cabecera-tarjeta"><span class="icono-tarjeta"><img src="imagenes/icono-riesgos.svg" width="28" height="28" alt=""></span><span class="numero-tarjeta">03 / REFLEXIONA</span></div>
+      <h3>Posibilidades y límites.</h3>
+      <p>Conoce los beneficios y los riesgos que conviene considerar antes de integrar una propuesta a tu trabajo.</p>
+      <a href="beneficios-riesgos.html">Conocer beneficios y riesgos <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="tarjeta tarjeta-recorrido">
+      <div class="cabecera-tarjeta"><span class="icono-tarjeta"><img src="imagenes/icono-practicas.svg" width="28" height="28" alt=""></span><span class="numero-tarjeta">04 / CONSTRUYE</span></div>
+      <h3>Buenas decisiones, mejor proceso.</h3>
+      <p>Aprende a plantear una tarea, revisar las respuestas y cuidar la información que compartes con una herramienta.</p>
+      <a href="buenas-practicas.html">Leer las buenas prácticas <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="tarjeta tarjeta-autor">
+      <span class="icono-tarjeta"><img src="imagenes/icono-autor.svg" width="28" height="28" alt=""></span>
+      <div><p class="etiqueta">Detrás del proyecto</p><h3>Hola, soy Alfredo.</h3><p>Conoce al creador de este espacio y el propósito del sitio.</p></div>
+      <a href="autor.html">Conocer al autor <span aria-hidden="true">↗</span></a>
+    </article>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <div class="contenedor footer-principal">
+      <div>
+        <p class="titulo-footer">Una idea es un buen comienzo.</p>
+        <p class="descripcion-footer">Comprende la IA, explora sus aplicaciones y construye con criterio.</p>
+      </div>
+      <div class="footer-enlaces">
+        <a href="fundamentos.html">Explorar los fundamentos</a>
+        <a href="autor.html">Conocer al autor</a>
+      </div>
+    </div>
+    <div class="contenedor pie-pagina">
+      <p>Alfredo Peters · Desarrollo de Software V</p>
+      <a href="#arriba">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>

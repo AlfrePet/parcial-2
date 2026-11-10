@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320" fill="none">
+  <rect x="18" y="18" width="564" height="284" rx="27" fill="#173e50"/>
+  <circle cx="300" cy="154" r="100" stroke="#60868b" stroke-opacity=".55" stroke-dasharray="4 8"/>
+  <path d="M300 99v124m-54 8h108M118 111h364" stroke="#d0e4e1" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="300" cy="111" r="12" fill="#c0e3d7" stroke="#173e50" stroke-width="4"/>
+  <path d="m168 111-44 79h88l-44-79m264 0-44 79h88l-44-79" stroke="#a0c2c1" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M116 189h104c-4 24-23 36-52 36s-48-12-52-36" fill="#b2dfcc"/>
+  <path d="M380 189h104c-4 24-23 36-52 36s-48-12-52-36" fill="#efd2a5"/>
+  <text x="168" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#1c5049">Beneficios</text>
+  <text x="432" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#60451f">Riesgos</text>
+  <path d="M65 83h18m-9-9v18m444 153h18m-9-9v18" stroke="#80adab" stroke-width="2" stroke-linecap="round"/>
+</svg>

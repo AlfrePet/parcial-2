@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Breve presentación de Alfredo Peters, creador del sitio educativo de IA y desarrollo de software.">
+  <meta name="author" content="Alfredo Peters">
+  <title>Autor | IA y desarrollo de software</title>
+  <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+  <script src="js/tema.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/principal.js" defer></script>
+</head>
+<body id="arriba">
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado y navegación compartidos por todas las páginas. -->
+  <header class="cabecera-sitio">
+    <div class="contenedor encabezado">
+      <a class="marca" href="index.html" aria-label="IA y desarrollo de software, ir al inicio">
+        <img src="imagenes/marca-ia.svg" width="46" height="46" alt="">
+        <span>
+          <span class="nombre-sitio">IA y desarrollo de software</span>
+          <span class="asignatura">Desarrollo de Software V</span>
+        </span>
+      </a>
+      <button id="boton-tema" class="boton-tema" type="button" hidden>
+        <span id="icono-tema" class="icono-tema" aria-hidden="true">☾</span>
+        <span id="texto-tema" class="texto-tema">Modo oscuro</span>
+      </button>
+      <button id="boton-menu" class="boton-menu" type="button"
+              aria-controls="enlaces-menu" aria-expanded="false" hidden>Menú</button>
+    </div>
+    <nav aria-label="Navegación principal">
+      <div class="contenedor">
+        <div id="enlaces-menu" class="enlaces-menu">
+          <a href="index.html">Inicio</a>
+          <a href="fundamentos.html">Fundamentos</a>
+          <a href="aplicaciones.html">Aplicaciones</a>
+          <a href="beneficios-riesgos.html">Beneficios y riesgos</a>
+          <a href="buenas-practicas.html">Buenas prácticas</a>
+          <a href="autor.html" aria-current="page">Autor</a>
+        </div>
+      </div>
+    </nav>
+    <div class="progreso-lectura" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="contenido" class="contenedor" tabindex="-1">
+<div class="titulo-pagina">
+  <p class="etiqueta">Detrás del proyecto</p>
+  <h1>Alfredo Peters</h1>
+  <p>Un proyecto para conectar la tecnología con el aprendizaje.</p>
+</div>
+
+<section class="seccion presentacion-autor" aria-labelledby="resena-titulo">
+  <figure class="retrato-autor">
+    <div class="marco-foto">
+      <img class="foto-autor" src="imagenes/alfredo-peters-web.jpg" width="780" height="1040"
+           alt="Fotografía de Alfredo Peters, creador de este sitio.">
+    </div>
+    <figcaption>Alfredo Peters, autor del sitio.</figcaption>
+  </figure>
+  <div>
+    <h2 id="resena-titulo">Sobre mí</h2>
+    <p>Soy Alfredo Peters y curso la asignatura Desarrollo de Software V. Como parte del curso, trabajé en el diseño y la programación de este sitio en Visual Studio Code.</p>
+    <p>Elegí la inteligencia artificial aplicada al desarrollo de software. Aquí explico cómo puede ayudar al programar y uso un ejemplo de una lista de tareas para mostrar por qué conviene probar el código antes de usarlo.</p>
+    <div class="tecnologias" aria-label="Tecnologías del sitio"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+  </div>
+</section>
+
+<section class="seccion">
+  <h2>Sobre el sitio</h2>
+  <p>Las páginas se elaboraron con HTML, CSS y JavaScript. El diseño utiliza estilos propios y una organización común para facilitar la lectura y la navegación.</p>
+  <p>Para recorrer el contenido, utiliza los enlaces del menú. En una pantalla pequeña, pulsa «Menú» para mostrar u ocultar los enlaces. También puedes cerrarlo con la tecla Escape.</p>
+</section>
+<nav class="navegacion-paginas" aria-label="Recorrido por el sitio">
+  <a href="buenas-practicas.html">
+    <img src="imagenes/icono-practicas.svg" width="40" height="40" alt="">
+    <span>
+      <span class="direccion-pagina">Anterior</span>
+      <strong class="titulo-destino">Buenas prácticas</strong>
+      <span class="descripcion-destino">Aprende a revisar y probar lo que genera la IA.</span>
+    </span>
+    <span class="flecha-destino" aria-hidden="true">←</span>
+  </a>
+  <a href="index.html">
+    <img src="imagenes/marca-ia.svg" width="40" height="40" alt="">
+    <span>
+      <span class="direccion-pagina">Volver al</span>
+      <strong class="titulo-destino">Inicio</strong>
+      <span class="descripcion-destino">Explora el recorrido completo.</span>
+    </span>
+    <span class="flecha-destino" aria-hidden="true">↗</span>
+  </a>
+</nav>
+  </main>
+
+  <footer>
+    <div class="contenedor footer-principal">
+      <div>
+        <p class="titulo-footer">Una idea es un buen comienzo.</p>
+        <p class="descripcion-footer">Comprende la IA, explora sus aplicaciones y construye con criterio.</p>
+      </div>
+      <div class="footer-enlaces">
+        <a href="fundamentos.html">Explorar los fundamentos</a>
+        <a href="autor.html">Conocer al autor</a>
+      </div>
+    </div>
+    <div class="contenedor pie-pagina">
+      <p>Alfredo Peters · Desarrollo de Software V</p>
+      <a href="#arriba">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>

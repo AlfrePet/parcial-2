@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recomendaciones para plantear tareas, revisar código y utilizar IA en proyectos de software.">
+  <meta name="author" content="Alfredo Peters">
+  <title>Buenas prácticas | IA y desarrollo de software</title>
+  <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+  <script src="js/tema.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/principal.js" defer></script>
+</head>
+<body id="arriba">
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado y navegación compartidos por todas las páginas. -->
+  <header class="cabecera-sitio">
+    <div class="contenedor encabezado">
+      <a class="marca" href="index.html" aria-label="IA y desarrollo de software, ir al inicio">
+        <img src="imagenes/marca-ia.svg" width="46" height="46" alt="">
+        <span>
+          <span class="nombre-sitio">IA y desarrollo de software</span>
+          <span class="asignatura">Desarrollo de Software V</span>
+        </span>
+      </a>
+      <button id="boton-tema" class="boton-tema" type="button" hidden>
+        <span id="icono-tema" class="icono-tema" aria-hidden="true">☾</span>
+        <span id="texto-tema" class="texto-tema">Modo oscuro</span>
+      </button>
+      <button id="boton-menu" class="boton-menu" type="button"
+              aria-controls="enlaces-menu" aria-expanded="false" hidden>Menú</button>
+    </div>
+    <nav aria-label="Navegación principal">
+      <div class="contenedor">
+        <div id="enlaces-menu" class="enlaces-menu">
+          <a href="index.html">Inicio</a>
+          <a href="fundamentos.html">Fundamentos</a>
+          <a href="aplicaciones.html">Aplicaciones</a>
+          <a href="beneficios-riesgos.html">Beneficios y riesgos</a>
+          <a href="buenas-practicas.html" aria-current="page">Buenas prácticas</a>
+          <a href="autor.html">Autor</a>
+        </div>
+      </div>
+    </nav>
+    <div class="progreso-lectura" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="contenido" class="contenedor" tabindex="-1">
+<div class="titulo-pagina cabecera-ilustrada">
+  <div>
+    <p class="etiqueta">Buenas prácticas</p>
+    <h1>Cómo trabajar con IA de forma responsable</h1>
+    <p>Un proceso claro permite aprovechar las sugerencias y mantener el control de lo que incorporas al proyecto.</p>
+  </div>
+  <ol class="recorrido-visual" role="list" aria-label="Tres pasos para trabajar con IA">
+    <li><a href="#definir-tarea">
+      <span class="numero-paso" aria-hidden="true">01</span>
+      <span><strong>Definir la tarea</strong><small>Explica qué necesitas y en qué contexto.</small></span>
+      <span class="flecha-paso" aria-hidden="true">↗</span>
+    </a></li>
+    <li><a href="#revisar-propuesta">
+      <span class="numero-paso" aria-hidden="true">02</span>
+      <span><strong>Revisar la propuesta</strong><small>Lee el código e identifica sus supuestos.</small></span>
+      <span class="flecha-paso" aria-hidden="true">↗</span>
+    </a></li>
+    <li><a href="#pruebas-del-titulo">
+      <span class="numero-paso" aria-hidden="true">03</span>
+      <span><strong>Comprobar el resultado</strong><small>Prueba qué pasa con distintas entradas.</small></span>
+      <span class="flecha-paso" aria-hidden="true">↗</span>
+    </a></li>
+  </ol>
+</div>
+
+<section class="seccion" id="definir-tarea">
+  <h2>Antes de pedir una solución</h2>
+  <ol class="lista-pasos">
+    <li><strong>Define una tarea concreta.</strong> Explica qué comportamiento necesitas y qué resultado esperas.</li>
+    <li><strong>Indica el entorno.</strong> Menciona el lenguaje de programación y las restricciones relevantes.</li>
+    <li><strong>Utiliza ejemplos pequeños.</strong> Comparte el fragmento que permite entender el problema, con datos ficticios.</li>
+    <li><strong>Pide aclaraciones.</strong> Si falta una regla importante, solicita que se pregunte antes de asumirla.</li>
+  </ol>
+</section>
+
+<section class="seccion">
+  <h2>Una petición que puedas comprobar</h2>
+  <p>La solicitud debe dar una dirección clara al asistente. Esta comparación muestra cómo concretar una tarea:</p>
+  <div class="columnas">
+    <article class="tarjeta">
+      <h3>Una idea general</h3>
+      <p>«Hazme un formulario».</p>
+      <p>Faltan datos sobre los campos, la tecnología y el comportamiento esperado.</p>
+    </article>
+    <article class="tarjeta">
+      <h3>Una tarea definida</h3>
+      <p>«En HTML y JavaScript, crea un formulario con nombre y correo. Si el nombre está vacío, muestra un mensaje junto al campo. Sin librerías externas. Explica cómo probarlo».</p>
+    </article>
+  </div>
+  <div class="nota">
+    <p><strong>Objetivo + contexto + restricciones + comprobación:</strong> estos elementos ayudan a revisar si la respuesta cumple lo solicitado.</p>
+  </div>
+</section>
+
+<section class="seccion" id="revisar-propuesta">
+  <h2>Después de recibir la respuesta</h2>
+  <ul class="lista-pasos">
+    <li><strong>Lee el código completo.</strong> Identifica qué hace y qué supuestos utiliza.</li>
+    <li><strong>Contrasta las dudas.</strong> Confirma funciones y dependencias en la documentación oficial.</li>
+    <li><strong>Prueba distintos casos.</strong> Incluye un caso normal, uno vacío y una entrada inválida cuando sean relevantes.</li>
+    <li><strong>Revisa el resto del proyecto.</strong> Comprueba que el cambio no afectó otras partes.</li>
+    <li><strong>Trabaja por partes.</strong> Guarda una copia del estado anterior para poder volver atrás si hace falta.</li>
+    <li><strong>Comprende antes de incorporar.</strong> Si una solución es demasiado compleja, pide una explicación y revisa sus partes.</li>
+  </ul>
+</section>
+
+<section class="seccion" id="pruebas-del-titulo">
+  <h2>Tres pruebas para una misma regla</h2>
+  <p>El título de una tarea debe contener texto. Antes de ejecutar el código, anota qué resultado esperas de cada entrada.</p>
+  <ul class="lista-pasos">
+    <li><strong>Título con texto.</strong> «Estudiar JavaScript» debe aceptarse.</li>
+    <li><strong>Título vacío.</strong> <code>""</code> debe rechazarse.</li>
+    <li><strong>Título con solo espacios.</strong> Tres espacios también deben rechazarse.</li>
+  </ul>
+  <p>Si el tercer caso se acepta, revisa qué mide la función. Aplicar <code>trim()</code> antes de comprobar la longitud deja el texto de solo espacios vacío. Ejecuta de nuevo las tres pruebas para comprobar la corrección.</p>
+  <p><a href="beneficios-riesgos.html#ejemplo-espacios">Revisar el código que falla</a> · <a href="aplicaciones.html#mini-practica">Ejecutar las pruebas en el validador</a></p>
+</section>
+
+<section class="seccion">
+  <h2>Cuida la información que compartes</h2>
+  <p>Evita incluir contraseñas, claves de acceso o datos personales reales en una solicitud. Sustituye esos valores por ejemplos y revisa las condiciones de la herramienta que utilizas.</p>
+  <p>La ayuda de la IA resulta más útil cuando está acompañada de comprensión, revisión y evidencia de que el programa funciona.</p>
+</section>
+
+<section class="fuentes">
+  <h2>Fuentes consultadas</h2>
+  <ul>
+    <li><a href="https://docs.github.com/en/copilot/responsible-use">GitHub Docs: uso responsable de asistentes de programación</a>.</li>
+    <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST: gestión de riesgos de IA</a>.</li>
+  </ul>
+</section>
+<nav class="navegacion-paginas" aria-label="Recorrido por el sitio">
+  <a href="beneficios-riesgos.html">
+    <img src="imagenes/icono-riesgos.svg" width="40" height="40" alt="">
+    <span>
+      <span class="direccion-pagina">Anterior</span>
+      <strong class="titulo-destino">Beneficios y riesgos</strong>
+      <span class="descripcion-destino">Conoce las ventajas y sus límites.</span>
+    </span>
+    <span class="flecha-destino" aria-hidden="true">←</span>
+  </a>
+  <a href="autor.html">
+    <img src="imagenes/icono-autor.svg" width="40" height="40" alt="">
+    <span>
+      <span class="direccion-pagina">Siguiente</span>
+      <strong class="titulo-destino">Autor</strong>
+      <span class="descripcion-destino">Conoce a Alfredo Peters y el proyecto.</span>
+    </span>
+    <span class="flecha-destino" aria-hidden="true">→</span>
+  </a>
+</nav>
+  </main>
+
+  <footer>
+    <div class="contenedor footer-principal">
+      <div>
+        <p class="titulo-footer">Una idea es un buen comienzo.</p>
+        <p class="descripcion-footer">Comprende la IA, explora sus aplicaciones y construye con criterio.</p>
+      </div>
+      <div class="footer-enlaces">
+        <a href="fundamentos.html">Explorar los fundamentos</a>
+        <a href="autor.html">Conocer al autor</a>
+      </div>
+    </div>
+    <div class="contenedor pie-pagina">
+      <p>Alfredo Peters · Desarrollo de Software V</p>
+      <a href="#arriba">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "nexo-ia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio educativo de Alfredo Peters sobre IA aplicada al desarrollo de software",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/servidor.mjs",
+    "check": "node --check js/principal.js && node scripts/verificar.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Usos de la inteligencia artificial en programación, pruebas, depuración y documentación de software.">
+  <meta name="author" content="Alfredo Peters">
+  <title>Aplicaciones | IA y desarrollo de software</title>
+  <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+  <script src="js/tema.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/principal.js" defer></script>
+</head>
+<body id="arriba">
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado y navegación compartidos por todas las páginas. -->
+  <header class="cabecera-sitio">
+    <div class="contenedor encabezado">
+      <a class="marca" href="index.html" aria-label="IA y desarrollo de software, ir al inicio">
+        <img src="imagenes/marca-ia.svg" width="46" height="46" alt="">
+        <span>
+          <span class="nombre-sitio">IA y desarrollo de software</span>
+          <span class="asignatura">Desarrollo de Software V</span>
+        </span>
+      </a>
+      <button id="boton-tema" class="boton-tema" type="button" hidden>
+        <span id="icono-tema" class="icono-tema" aria-hidden="true">☾</span>
+        <span id="texto-tema" class="texto-tema">Modo oscuro</span>
+      </button>
+      <button id="boton-menu" class="boton-menu" type="button"
+              aria-controls="enlaces-menu" aria-expanded="false" hidden>Menú</button>
+    </div>
+    <nav aria-label="Navegación principal">
+      <div class="contenedor">
+        <div id="enlaces-menu" class="enlaces-menu">
+          <a href="index.html">Inicio</a>
+          <a href="fundamentos.html">Fundamentos</a>
+          <a href="aplicaciones.html" aria-current="page">Aplicaciones</a>
+          <a href="beneficios-riesgos.html">Beneficios y riesgos</a>
+          <a href="buenas-practicas.html">Buenas prácticas</a>
+          <a href="autor.html">Autor</a>
+        </div>
+      </div>
+    </nav>
+    <div class="progreso-lectura" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="contenido" class="contenedor" tabindex="-1">
+<div class="titulo-pagina cabecera-ilustrada">
+  <div>
+    <p class="etiqueta">Aplicaciones</p>
+    <h1>La IA en el trabajo de desarrollo</h1>
+    <p>Puede apoyar diferentes tareas, desde la planificación de una solución hasta su mantenimiento.</p>
+  </div>
+  <figure class="arte-cabecera">
+    <img src="imagenes/flujo-ia.svg" width="640" height="380"
+         alt="Proceso en tres pasos: plantear una idea, consultar a un asistente de IA y revisar la propuesta.">
+    <figcaption>La revisión forma parte del proceso de trabajo con IA.</figcaption>
+  </figure>
+</div>
+
+<section class="seccion">
+  <h2>Principales usos</h2>
+  <div class="tarjetas-usos">
+    <article class="tarjeta tarjeta-uso">
+      <div class="cabecera-tarjeta">
+        <span class="icono-tarjeta"><img src="imagenes/icono-aplicaciones.svg" alt="" width="28" height="28"></span>
+        <span class="numero-tarjeta" aria-hidden="true">01</span>
+      </div>
+      <h3>Generación de código</h3>
+      <p>Un asistente puede proponer una función a partir de una descripción. Por ejemplo, una función que valide el título de una tarea. La persona debe comprobar los tipos de datos, las entradas vacías y el comportamiento esperado.</p>
+    </article>
+    <article class="tarjeta tarjeta-uso">
+      <div class="cabecera-tarjeta">
+        <span class="icono-tarjeta"><img src="imagenes/icono-depuracion.svg" alt="" width="28" height="28"></span>
+        <span class="numero-tarjeta" aria-hidden="true">02</span>
+      </div>
+      <h3>Explicación y depuración</h3>
+      <p>Puede ayudar a interpretar un fragmento desconocido o sugerir causas para un error. Las hipótesis deben comprobarse reproduciendo el problema y observando qué ocurre después de un cambio.</p>
+    </article>
+    <article class="tarjeta tarjeta-uso">
+      <div class="cabecera-tarjeta">
+        <span class="icono-tarjeta"><img src="imagenes/icono-practicas.svg" alt="" width="28" height="28"></span>
+        <span class="numero-tarjeta" aria-hidden="true">03</span>
+      </div>
+      <h3>Preparación de pruebas</h3>
+      <p>Puede sugerir casos normales, límites y entradas inválidas. El resultado esperado de cada prueba debe corresponder a los requisitos del programa.</p>
+    </article>
+    <article class="tarjeta tarjeta-uso">
+      <div class="cabecera-tarjeta">
+        <span class="icono-tarjeta"><img src="imagenes/icono-fundamentos.svg" alt="" width="28" height="28"></span>
+        <span class="numero-tarjeta" aria-hidden="true">04</span>
+      </div>
+      <h3>Documentación</h3>
+      <p>Puede preparar borradores de comentarios, instrucciones o explicaciones de funciones. Es necesario revisar que describan el comportamiento real del código.</p>
+    </article>
+    <article class="tarjeta tarjeta-uso">
+      <div class="cabecera-tarjeta">
+        <span class="icono-tarjeta"><img src="imagenes/icono-mejora.svg" alt="" width="28" height="28"></span>
+        <span class="numero-tarjeta" aria-hidden="true">05</span>
+      </div>
+      <h3>Mejora del código</h3>
+      <p>Puede sugerir nombres más claros o formas de simplificar una función. Antes de aceptar una modificación, hay que confirmar que conserva el comportamiento requerido.</p>
+    </article>
+  </div>
+</section>
+
+<section class="seccion practica" id="mini-practica" aria-labelledby="titulo-practica">
+  <p class="etiqueta">Ponlo en práctica</p>
+  <h2 id="titulo-practica">De una idea a una prueba</h2>
+  <p>Estás creando una lista de tareas. Cada título debe contener texto y la aplicación debe rechazar los títulos vacíos o escritos solo con espacios.</p>
+
+  <div class="nota">
+    <p><strong>La petición al asistente.</strong> «Escribe una función en JavaScript que acepte títulos con texto y rechace los títulos vacíos o escritos solo con espacios. Incluye ejemplos de prueba».</p>
+  </div>
+
+  <div class="demostracion-validador">
+    <div class="panel-validador">
+      <h3>Prueba un título</h3>
+      <form id="formulario-validador" hidden>
+        <label class="etiqueta-validador" for="entrada-validador">Título de la tarea</label>
+        <p id="ayuda-validador">Escribe un título o selecciona uno de los casos de ejemplo.</p>
+        <input class="entrada-validador" id="entrada-validador" type="text" placeholder="Estudiar JavaScript" aria-describedby="ayuda-validador" autocomplete="off">
+        <div class="casos-validador" role="group" aria-label="Casos de ejemplo">
+          <button class="boton boton-secundario" type="button" data-titulo="Estudiar JavaScript">Título válido</button>
+          <button class="boton boton-secundario" type="button" data-titulo="">Vacío</button>
+          <button class="boton boton-secundario" type="button" data-titulo="   ">Solo espacios</button>
+        </div>
+        <button class="boton" type="submit">Validar título</button>
+        <p class="resultado-validador" id="resultado-validador" role="status" aria-atomic="true">Aquí verás el resultado.</p>
+      </form>
+      <noscript><p>Activa JavaScript para probar el validador.</p></noscript>
+    </div>
+    <div class="panel-validador">
+      <h3>La función que estás probando</h3>
+      <pre class="codigo-ejemplo" id="bloque-codigo-validador" hidden><code id="codigo-validador"></code></pre>
+      <p>La función comprueba que el título sea texto. <code>trim()</code> quita los espacios de los extremos y la validación verifica que todavía quede algún carácter.</p>
+      <p><a href="beneficios-riesgos.html#ejemplo-espacios">Ver el fallo que evita <code>trim()</code></a></p>
+    </div>
+  </div>
+
+  <h3>Comprueba lo aprendido</h3>
+  <p>Elige cómo pedir ayuda a la IA y cómo revisar su propuesta.</p>
+
+  <form id="formulario-practica" hidden>
+    <fieldset data-explicacion="Una petición clara describe el lenguaje, el comportamiento esperado y los casos que deben comprobarse.">
+      <legend>1. ¿Qué petición le enviarías al asistente?</legend>
+      <label><input type="radio" name="peticion" value="general" required> Haz que mi lista de tareas funcione mejor.</label>
+      <label><input type="radio" name="peticion" value="concreta" data-correcta> En JavaScript, escribe una función que rechace títulos vacíos o con solo espacios. Incluye ejemplos de prueba.</label>
+      <label><input type="radio" name="peticion" value="visual"> Cambia los colores del formulario y redondea sus botones.</label>
+    </fieldset>
+
+    <fieldset data-explicacion="Probar un título válido, uno vacío y uno con solo espacios permite comprobar las tres situaciones del requisito.">
+      <legend>2. ¿Qué harías antes de usar la función?</legend>
+      <label><input type="radio" name="revision" value="aceptar" required> Incorporarla si la explicación del asistente parece clara.</label>
+      <label><input type="radio" name="revision" value="un-caso"> Probar un título válido y dar la función por terminada.</label>
+      <label><input type="radio" name="revision" value="tres-casos" data-correcta> Probar un título válido, uno vacío y uno con solo espacios. Comparar cada resultado con lo esperado.</label>
+    </fieldset>
+
+    <div class="acciones-practica">
+      <button class="boton" type="submit">Comprobar respuestas</button>
+      <button class="boton boton-secundario" type="reset">Reiniciar práctica</button>
+    </div>
+    <div aria-live="polite" aria-atomic="true">
+      <div id="resultado-practica" class="nota" hidden>
+        <p id="resumen-practica"></p>
+        <ul id="explicaciones-practica"></ul>
+      </div>
+    </div>
+  </form>
+  <noscript><p>Activa JavaScript para comprobar tus respuestas.</p></noscript>
+</section>
+
+<section class="fuentes">
+  <h2>Fuentes consultadas</h2>
+  <ul>
+    <li><a href="https://docs.github.com/en/copilot/get-started/about-github-copilot">GitHub Docs: información sobre asistencia de programación</a>.</li>
+    <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST: marco de gestión de riesgos de IA</a>.</li>
+  </ul>
+</section>
+<nav class="navegacion-paginas" aria-label="Recorrido por el sitio">
+  <a href="fundamentos.html">
+    <img src="imagenes/icono-fundamentos.svg" width="40" height="40" alt="">
+    <span>
+      <span class="direccion-pagina">Anterior</span>
+      <strong class="titulo-destino">Fundamentos</strong>
+      <span class="descripcion-destino">Entiende los conceptos básicos de la IA.</span>
+    </span>
+    <span class="flecha-destino" aria-hidden="true">←</span>
+  </a>
+  <a href="beneficios-riesgos.html">
+    <img src="imagenes/icono-riesgos.svg" width="40" height="40" alt="">
+    <span>
+      <span class="direccion-pagina">Siguiente</span>
+      <strong class="titulo-destino">Beneficios y riesgos</strong>
+      <span class="descripcion-destino">Conoce las ventajas y sus límites.</span>
+    </span>
+    <span class="flecha-destino" aria-hidden="true">→</span>
+  </a>
+</nav>
+  </main>
+
+  <footer>
+    <div class="contenedor footer-principal">
+      <div>
+        <p class="titulo-footer">Una idea es un buen comienzo.</p>
+        <p class="descripcion-footer">Comprende la IA, explora sus aplicaciones y construye con criterio.</p>
+      </div>
+      <div class="footer-enlaces">
+        <a href="fundamentos.html">Explorar los fundamentos</a>
+        <a href="autor.html">Conocer al autor</a>
+      </div>
+    </div>
+    <div class="contenedor pie-pagina">
+      <p>Alfredo Peters · Desarrollo de Software V</p>
+      <a href="#arriba">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>

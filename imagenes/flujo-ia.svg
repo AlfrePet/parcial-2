@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="380" viewBox="0 0 640 380" fill="none">
+  <rect x="12" y="12" width="616" height="356" rx="30" fill="#173e50"/>
+  <path d="M47 75h546m-546 242h546" stroke="#416573"/>
+  <circle cx="51" cy="49" r="4" fill="#b2dfcc"/>
+  <text x="67" y="55" fill="#d7ece8" font-family="Arial,sans-serif" font-size="18" letter-spacing="2">FLUJO DE TRABAJO</text>
+  <path d="M190 191h55m150 0h55m-216-7 8 7-8 7m205-14 8 7-8 7" stroke="#9dc4c1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="40" y="105" width="150" height="173" rx="19" fill="#edf4f1"/>
+  <rect x="245" y="105" width="150" height="173" rx="19" fill="#254f60" stroke="#719797"/>
+  <rect x="450" y="105" width="150" height="173" rx="19" fill="#b2dfcc"/>
+  <g font-family="Consolas,monospace" font-size="18" text-anchor="middle">
+    <text x="115" y="142" fill="#4f756f">01</text>
+    <text x="320" y="142" fill="#b2dfcc">02</text>
+    <text x="525" y="142" fill="#346458">03</text>
+  </g>
+  <g stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M106 190c-11-7-6-21 9-21s20 14 9 21v9h-18v-9m4 16h10" stroke="#236e68"/>
+    <path d="m307 176-10 11 10 11m26-22 10 11-10 11m-10-25-6 28" stroke="#c9e9df"/>
+    <path d="M513 188l8 8 17-19" stroke="#286352" stroke-width="4"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-weight="bold" font-size="22" text-anchor="middle">
+    <text x="115" y="246" fill="#173e50">Tu idea</text>
+    <text x="320" y="246" fill="#f1faf8">Asistente IA</text>
+    <text x="525" y="246" fill="#173e50">Tu revisión</text>
+  </g>
+  <circle cx="53" cy="340" r="3" fill="#90bdb8"/>
+  <path d="M67 340h69m400 0h57" stroke="#719797" stroke-width="2" stroke-linecap="round"/>
+</svg>

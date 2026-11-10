@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beneficios, límites y riesgos de la IA aplicada al desarrollo de software.">
+  <meta name="author" content="Alfredo Peters">
+  <title>Beneficios y riesgos | IA y desarrollo de software</title>
+  <link rel="icon" href="imagenes/favicon.svg" type="image/svg+xml">
+  <script src="js/tema.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/principal.js" defer></script>
+</head>
+<body id="arriba">
+  <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado y navegación compartidos por todas las páginas. -->
+  <header class="cabecera-sitio">
+    <div class="contenedor encabezado">
+      <a class="marca" href="index.html" aria-label="IA y desarrollo de software, ir al inicio">
+        <img src="imagenes/marca-ia.svg" width="46" height="46" alt="">
+        <span>
+          <span class="nombre-sitio">IA y desarrollo de software</span>
+          <span class="asignatura">Desarrollo de Software V</span>
+        </span>
+      </a>
+      <button id="boton-tema" class="boton-tema" type="button" hidden>
+        <span id="icono-tema" class="icono-tema" aria-hidden="true">☾</span>
+        <span id="texto-tema" class="texto-tema">Modo oscuro</span>
+      </button>
+      <button id="boton-menu" class="boton-menu" type="button"
+              aria-controls="enlaces-menu" aria-expanded="false" hidden>Menú</button>
+    </div>
+    <nav aria-label="Navegación principal">
+      <div class="contenedor">
+        <div id="enlaces-menu" class="enlaces-menu">
+          <a href="index.html">Inicio</a>
+          <a href="fundamentos.html">Fundamentos</a>
+          <a href="aplicaciones.html">Aplicaciones</a>
+          <a href="beneficios-riesgos.html" aria-current="page">Beneficios y riesgos</a>
+          <a href="buenas-practicas.html">Buenas prácticas</a>
+          <a href="autor.html">Autor</a>
+        </div>
+      </div>
+    </nav>
+    <div class="progreso-lectura" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="contenido" class="contenedor" tabindex="-1">
+    <div class="titulo-pagina cabecera-ilustrada">
+      <div>
+        <p class="etiqueta">Beneficios y riesgos</p>
+        <h1>Posibilidades que necesitan criterio</h1>
+        <p>La utilidad de una herramienta depende de la tarea, del contexto y de cómo se comprueba su resultado.</p>
+      </div>
+      <figure class="arte-cabecera">
+        <img src="imagenes/balanza-ia.svg" width="600" height="320" alt="Balanza con los beneficios de la IA en un plato y sus riesgos en el otro.">
+        <figcaption>Evalúa ambos aspectos antes de usar una propuesta.</figcaption>
+      </figure>
+    </div>
+
+    <div class="balance-ia">
+      <section class="seccion panel-balance panel-beneficios">
+        <div class="cabecera-balance">
+          <span class="marca-balance" aria-hidden="true">↗</span>
+          <h2>Beneficios</h2>
+        </div>
+        <article>
+          <h3>Un punto de partida</h3>
+          <p>Puede preparar un borrador de una función o una explicación inicial. Esto ayuda a empezar una tarea que después debes revisar y adaptar.</p>
+        </article>
+        <article>
+          <h3>Apoyo al aprendizaje</h3>
+          <p>Puede explicar un fragmento de código paso a paso o presentar un ejemplo. Conviene contrastar la explicación con lo que hace el programa.</p>
+        </article>
+        <article>
+          <h3>Exploración de alternativas</h3>
+          <p>Puede sugerir distintas formas de resolver un problema. Compararlas permite discutir sus ventajas y elegir según los requisitos.</p>
+        </article>
+      </section>
+      <section class="seccion panel-balance panel-riesgos">
+        <div class="cabecera-balance">
+          <span class="marca-balance" aria-hidden="true">!</span>
+          <h2>Riesgos y limitaciones</h2>
+        </div>
+        <article>
+          <h3>Respuestas que parecen correctas</h3>
+          <p>Una propuesta puede utilizar una función que no existe o interpretar mal una regla. Comprueba su comportamiento con documentación oficial y pruebas.</p>
+        </article>
+        <article>
+          <h3>Información privada</h3>
+          <p>El código puede incluir contraseñas, claves o datos personales. Utiliza ejemplos ficticios y comparte solo el contexto necesario.</p>
+        </article>
+        <article>
+          <h3>Contexto incompleto</h3>
+          <p>El asistente puede desconocer restricciones del proyecto. Una solución que funciona en un ejemplo puede requerir cambios en el programa real.</p>
+        </article>
+        <article>
+          <h3>Dependencia sin comprensión</h3>
+          <p>Copiar una solución sin entenderla dificulta encontrar errores y mantener el código. Lee, explica y prueba cada parte.</p>
+        </article>
+      </section>
+    </div>
+    <section class="seccion">
+  <h2>Comparación por tarea</h2>
+  <div class="tabla-contenedor">
+    <table>
+      <caption>Aspectos que conviene considerar al utilizar IA</caption>
+      <thead>
+        <tr><th scope="col">Tarea</th><th scope="col">Beneficio posible</th><th scope="col">Limitación</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Programar</th><td>Obtener un punto de partida para una función.</td><td>El código puede contener errores o asumir requisitos incorrectos.</td></tr>
+        <tr><th scope="row">Comprender código</th><td>Recibir una explicación inicial.</td><td>La explicación puede omitir detalles del proyecto.</td></tr>
+        <tr><th scope="row">Crear pruebas</th><td>Explorar distintos casos de entrada.</td><td>Los casos sugeridos pueden ser insuficientes.</td></tr>
+        <tr><th scope="row">Documentar</th><td>Preparar un borrador organizado.</td><td>El texto puede describir funciones que el código no tiene.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+    <section class="seccion" id="ejemplo-espacios">
+      <h2>El título que engaña al validador</h2>
+      <p>Imagina que un asistente propone esta función para rechazar títulos vacíos.</p>
+      <pre class="codigo-ejemplo"><code>function validarTitulo(titulo) {
+  return titulo.length &gt; 0;
+}</code></pre>
+      <p>«Estudiar JavaScript» se acepta y el texto vacío se rechaza. Pero un título de tres espacios se acepta porque su longitud es 3, aunque sigue sin contener texto útil. <a href="buenas-practicas.html#pruebas-del-titulo">Ver cómo detectar el fallo con una prueba</a>.</p>
+      <div class="nota">
+        <p><strong>Para recordar:</strong> una respuesta rápida es un comienzo. Su calidad se demuestra al comprobar que satisface el requisito.</p>
+      </div>
+    </section>
+
+    <section class="fuentes">
+      <h2>Fuentes consultadas</h2>
+      <ul>
+        <li><a href="https://docs.github.com/en/copilot/get-started/about-github-copilot">GitHub Docs: asistencia de programación</a>.</li>
+        <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST: marco de gestión de riesgos de IA</a>.</li>
+      </ul>
+    </section>
+    <nav class="navegacion-paginas" aria-label="Recorrido por el sitio">
+      <a href="aplicaciones.html">
+        <img src="imagenes/icono-aplicaciones.svg" width="40" height="40" alt="">
+        <span>
+          <span class="direccion-pagina">Anterior</span>
+          <strong class="titulo-destino">Aplicaciones</strong>
+          <span class="descripcion-destino">Descubre cómo se usa la IA al programar.</span>
+        </span>
+        <span class="flecha-destino" aria-hidden="true">←</span>
+      </a>
+      <a href="buenas-practicas.html">
+        <img src="imagenes/icono-practicas.svg" width="40" height="40" alt="">
+        <span>
+          <span class="direccion-pagina">Siguiente</span>
+          <strong class="titulo-destino">Buenas prácticas</strong>
+          <span class="descripcion-destino">Aprende a revisar y probar lo que genera la IA.</span>
+        </span>
+        <span class="flecha-destino" aria-hidden="true">→</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <div class="contenedor footer-principal">
+      <div>
+        <p class="titulo-footer">Una idea es un buen comienzo.</p>
+        <p class="descripcion-footer">Comprende la IA, explora sus aplicaciones y construye con criterio.</p>
+      </div>
+      <div class="footer-enlaces">
+        <a href="fundamentos.html">Explorar los fundamentos</a>
+        <a href="autor.html">Conocer al autor</a>
+      </div>
+    </div>
+    <div class="contenedor pie-pagina">
+      <p>Alfredo Peters · Desarrollo de Software V</p>
+      <a href="#arriba">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>
